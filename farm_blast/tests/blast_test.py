@@ -39,7 +39,7 @@ class TestBlast(unittest.TestCase):
         ]
                   
         for suffixes, blast1, blast2 in tuples:
-            print(suffixes, blast1.blast_type, blast2.blast_type)
+            print((suffixes, blast1.blast_type, blast2.blast_type))
             for suff in suffixes:
                 open(query_file + '.' + suff, 'w').close()
 
